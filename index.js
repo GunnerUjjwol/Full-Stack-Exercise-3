@@ -14,6 +14,8 @@ const logger = morgan(':method :url :status :res[content-length] - :response-tim
 const cors = require('cors')
 app.use(cors())
 
+app.use(express.static('build'))
+
 let persons =
 [
     {
